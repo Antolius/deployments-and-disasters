@@ -9,13 +9,13 @@ If you are interested in getting to know the game rules along with the reasoning
 * Potential DMs interested in running a game / exercise like this.
 * Anyone looking to contribute to the game.
 
-In the future I'll be adding more resources more geared towards the players.
+If you are looking for game rules for players, you can find them in the [rules.md](./rules.md) document.
 
 ### Prerequisites
 
 Deployments & Disasters is intentionally light on rules and mechanics. One of the goals of the game is to be accessible to players that are not familiar with other RPG systems. Another benefit of this is that DM also doesn't need a deep knowledge of other systems, although some experience is welcome. DM will need a deep understanding of the software system that game is centers around. Note that the system can be entirely fictional, or based on the real world example.
 
-Other that rules you'll need:
+Other that [rules](./rules.md) you'll need:
 
 > 5 six-sided dice. 
 
