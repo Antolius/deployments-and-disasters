@@ -4,7 +4,7 @@ Player roles in Deployments & Disasters mimic the class / race concepts in tradi
 
 When referring to real world usage in this document that includes tools and technologies that your players might encounter on the job. By introducing real world tools into the game players are encouraged to learn about them and improve their performance. See the [design.md](./design.md) document for more info.
 
-If you find any of these roles doesn't fit your real world procedures / experiences feel free to change them up. Just keep in mind that they are separated and limited in information they receive for a reason.
+If you find any of these roles doesn't fit your real world procedures / experiences, feel free to change them up. Just keep in mind that they are separated and limited in information they receive for a reason.
 
 
 ## Frontend developer
@@ -29,13 +29,13 @@ Their tools proficiency includes:
 
 ## Backend developer
 
-They should receive any info related to he architecture of the backend components of the system. This could include individual microservices, messaging / queueing solutions, databse details, etc.
+They should receive any info related to the architecture of the backend components of the system. This could include individual microservices, messaging / queueing solutions, databse details, etc.
 
 Their tools proficiency includes:
 
-* Language used to writhe the microservices
+* Language used to write the microservices
 * Management skills of used messaging / queueing  solutions
-* SQL and other used DB technologies (line no-sql)
+* SQL and other used DB technologies (like no-sql)
 * Graylog / Kibana or other logging solution
 
 ## SRE
