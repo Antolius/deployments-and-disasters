@@ -15,9 +15,9 @@ A game session is composed of 3 stages:
 Main objective of the game is to resolve the incident (2nd stage) as fast as possible. Incident stage is composed of individual turns. Each turn has 2 steps:
 
 1. Planning step. Players decide who among them will take what actions. DM reveals the difficulty of completing each action. Players allocate D6 dice from a shared 5 dice pool to each action.
-1. Execution step. Players roll the dice, and apply tool proficiency bonus. If dice + bonus is strictly larger than difficulty the action succeeds. DM reviles the consequences of each action.
+1. Execution step. Players roll the dice, and apply tool proficiency bonus. If dice + bonus is strictly larger than difficulty the action succeeds. DM reveals the consequences of each action.
 
-The goal of the game is to resolve the incident in as few turns as possible. This is tracked by the incident clock that starts with the incident stage and progresses by 5 minutes per turn. Depending on the scenario DM marks certain key timestamps on the clock, such as duration after which penalties are played to clients, or duration that denotes the breach of contract.
+The goal of the game is to resolve the incident in as few turns as possible. This is tracked by the incident clock that starts with the incident stage and progresses by 5 minutes per turn. Depending on the scenario DM marks certain key timestamps on the clock, such as duration after which penalties are payed to clients, or duration that denotes the breach of contract.
 
 Players can gain some extra time (push timestamps back) if they publish a detailed client impact within the first 3 turns of the game. The report should include the list of impacted clients, and features, as well as the nature of impact.
 
@@ -42,7 +42,7 @@ After the planning phase players roll the dice for each action in sequence. Dice
 
 Let's imagine 3 players:
 
-* Fred, a frontend dev with proficiency in TypeScript, Node.js, Angular and NewRleic.
+* Fred, a frontend dev with proficiency in TypeScript, Node.js, Angular and NewRelic.
 * Becky, a backend dev with proficiency in Java, Spring, SQL and JMC.
 * Sasha, a site reliability engineer with proficiency in Prometheus, Graylog, Grafana and Kubernetes.
 
