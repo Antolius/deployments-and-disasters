@@ -6,37 +6,37 @@ Rules for playing a game of Deployments & Disasters. This document is intended f
 
 Deployments & Disasters is intended to be used as both a fun pastime and a training tool to get us all better at incident management. Games are intended to be played as one-off sessions, not continuous campaigns. Each game centers around resolving a single incident impacting a single software system.
 
-A game session is composed of 3 stages:
+A game session has 3 stages:
 
-1. Briefing stage. Here players are assigned roles and introduced to the system that will experience failure. Each player is given a set of tool proficiencies.
-1. Incident stage. This is where the main event takes place. Players attempt to resolve the incident. DM gets in their way. Good stuff.
-1. Aftermath stage. Here players discuss future proofing the system. At the end they provide meta feedback on the game itself.
+1. **Briefing stage.** Here players pick their roles and disaster master introduces them to the system that will experience failure. Each role has a set of tool proficiencies and in-depth information about part of the system.
+1. **Incident stage.** This is where the main event takes place. Players attempt to resolve the incident. Disaster master gets in their way. Good stuff.
+1. **Aftermath stage.** Here players discuss future proofing the system. At the end they provide meta feedback on the game itself.
 
 Main objective of the game is to resolve the incident (2nd stage) as fast as possible. Incident stage is composed of individual turns. Each turn has 2 steps:
 
-1. Planning step. Players decide who among them will take what actions. DM reveals the difficulty of completing each action. Players allocate D6 dice from a shared 5 dice pool to each action.
-1. Execution step. Players roll the dice, and apply tool proficiency bonus. If dice + bonus is strictly larger than difficulty the action succeeds. DM reveals the consequences of each action.
+1. **Planning step.** Players decide who among them will take what actions. Disaster master sets the difficulty for completing each action. Players allocate D6 dice from a shared 5 dice pool to each action.
+1. **Execution step.** One by one players roll the allocated dice, and apply tool proficiency bonus. If dice + bonus is strictly larger than difficulty the action succeeds. Disaster master narrates consequences of each action.
 
 The goal of the game is to resolve the incident in as few turns as possible. This is tracked by the incident clock that starts with the incident stage and progresses by 5 minutes per turn. Depending on the scenario DM marks certain key timestamps on the clock, such as duration after which penalties are payed to clients, or duration that denotes the breach of contract.
 
-Players can gain some extra time (push timestamps back) if they publish a detailed client impact within the first 3 turns of the game. The report should include the list of impacted clients, and features, as well as the nature of impact.
+Players can gain some extra time (push timestamps back) if they publish a detailed client impact within the first 3 turns of the game. The report should include a list of impacted clients and features, as well as the nature of impact.
 
 ## Anatomy of the turn
 
 As noted, the incident resolution plays out as a series of turns. In each turn players first decide on actions they will take, and then all the actions are resolved. Since all actions are picked before any of them are resolved players need to wait until the next turn to react to them.
 
-There are a few rules on formulating the action. Each action falls strictly into one of 2 categories:
+There are a few rules on formulating the action. Each action falls into one of 2 categories:
 
-1. Query action. Result of this is some insight into the system. If action fails DM will withhold some or all of the queried information.
-1. Command action. Result of this is some change in the system. If action fails DM will introduce extra complication to the scenario.
+1. **Query action.** Result of this is some insight into the system. If action fails disaster master will withhold some or all of the queried information.
+1. **Command action.** Result of this is some change in the system. If action fails disaster master will introduce extra complication to the scenario.
 
 In addition to a category, each action has one tool that's used to accomplish it. For query actions those can be systems used to query logs / metrics. For command actions those are usually OPS tools for operations like deployment, programming languages for changes to the code, DB management apps for updates to stored data, etc. 
 
-Players can define any action they wish to perform, as long as they stick to one category & tool per action. When defining actions players should try to be as precise as possible since DM has the right to interpret ambiguous situations.
+Players can define any action they wish to perform, as long as they stick to one category & tool per action. When defining actions players should try to be as precise as possible since disaster master has the right to interpret ambiguous situations.
 
-Turn starts with the planning step. The goal here is to define which players will attempt which actions and allocate a certain number of dice to them. Players should reach a common agreement on what actions to pick. As they discuss actions they check with DM on the difficulty of each action. Each player has proficiency in using certain tools. If player proficiency matches the tool used to accomplish an action they receive a bonus of `+2` to the total dice roll. Each player can attempt at most one action per turn, and not all players must act. Players split 5 D6 dice among their actions, informed by their difficulty.
+Turn starts with the planning step. The goal here is to define which players will attempt which actions and allocate a certain number of dice to them. Players should reach a common agreement on what actions to pick. As they discuss actions they check the difficulty of each action with disaster master. Each player has proficiency in using certain tools. If player proficiency matches the tool used to accomplish an action they receive a bonus of `+2` to the total dice roll. Each player can attempt at most one action per turn, and not all players must act. Players split 5 D6 dice among their chosen actions, informed by their difficulty.
 
-After the planning phase players roll the dice for each action in sequence. Dice rolls and bonus are added up, and DM reveals the result of the action. In case of a query action DM will reveal or withhold information. In case of command action they will narrate the results, optionally introducing a complication.
+After the planning phase players roll the dice for each action in sequence. Dice rolls and bonuses are added up, and disaster master reveals the result of the action. In case of a query action disaster master will reveal or withhold information. In case of command action they will narrate the results, optionally introducing a complication.
 
 ### Example
 

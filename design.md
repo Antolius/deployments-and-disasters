@@ -1,6 +1,6 @@
 # Design of Deployments & Disasters
 
-A SRE RPG.
+A site reliability themed tabletop role-playing game.
 
 ## Design principles
 
@@ -26,13 +26,13 @@ How to know if goals are achieved?
 
 #### Coop
 
-* DM can observe player interactions during the game to see if their teamwork improves.
+* Disaster master can observe player interactions during the game to see if their teamwork improves.
 * Players' line managers could report on their improvement in teamwork as part of their performance review process.
 
 #### Improve
 
 * Endgame poll can include a question on newly discovered tools.
-* DM can observe players and note instances of them discovering a tool they didn't already know about.
+* Disaster master can observe players and note instances of them discovering a tool they didn't already know about.
 * Player mentors can work with them to incorporate improving in areas they detected as significant through the game. Mentors could later report on this.
 
 ## Game rules
@@ -41,7 +41,7 @@ Rules proposed here diverge from any real world tabletop RPG. The name associati
 
 1. Each player is assigned a role (like a class) and is briefed on a single aspect of the project that will be hit with an incident. For example, roles can be frontend dev, API dev, backend dev, SRE, team lead, etc. Each role will have unique insight into the system, but nobody will know everything (`Coop`, `Improve`).
 1. The incident starts, and along with it the clock that counts how long it takes the team to resolve it. This segment lasts until successful resolution, and is split into turns. Each turn adds 5 min to the clock. Players can actually discuss their actions for longer than that, turn length is fixed to make the game simpler and more clear to players (`Scale`, `Coop`).
-1. After the incident is resolved, players plan for future improvements to the system that will prevent this kind of thing repeating. They discuss the session with DM and fill out the poll, so that we can keep on improving the game (`Scale`, `Improve`).
+1. After the incident is resolved, players plan for future improvements to the system that will prevent this kind of thing repeating. They discuss the session with disaster master and fill out the poll, so that we can keep on improving the game (`Scale`, `Improve`).
 
 ## Player roles
 
@@ -62,7 +62,7 @@ Additional clock related mechanic is _Client impact report_. If the team manages
 
 ## The incident
 
-Incident is the main inciting event of the game. It can start either with players receiving an automated alert or a customer complaint. For each incident DM should prepare:
+Incident is the main inciting event of the game. It can start either with players receiving an automated alert or a customer complaint. For each incident disaster master should prepare:
 
 * A series of failure conditions that lead to the incident. Removing those is the ultimate goal for the players.
 * A series of observable side effects. This includes things like logs, metrics, alerts, thread / heap dumps, DB states, etc. Players will combine these observations with their knowledge of the system (see  Player roles section) in order to detect the failure conditions.
@@ -70,10 +70,10 @@ Incident is the main inciting event of the game. It can start either with player
 
 ## Game turn
 
-The 2nd game stage (resolving the incident) is composed of a series of turns. Each turn progresses the incident clock by 5 minutes. This part of the game is the most codified with rules. In each turn players decide on the actions they'll take, throw a set of 5 dices, and depending on their roll DM reveals the effects of those actions. More formally, each turn has 2 steps:
+The 2nd game stage (resolving the incident) is composed of a series of turns. Each turn progresses the incident clock by 5 minutes. This part of the game is the most codified with rules. In each turn players decide on the actions they'll take, throw a set of 5 dices, and depending on their roll disaster master reveals the effects of those actions. More formally, each turn has 2 steps:
 
 1. Players agree among themselves on the actions they will perform. Each action will be performed by one of the players. No player can perform multiple actions per turn, so they can perform as many actions as there are players in the game. It's ok to take less actions, including none. (Incident clock will still progress.) Players have a shared pool of 5D6 dice that they can allocate to actions they picked. They can allocate any number of dice to any action, as long as they don't go over the limit of 5.
-1. Dice are rolled for each action in succession, and DM decides on the success or failure of the action. If action fails, DM can either withhold some information that players were looking for or introduce a complication to the game. DM relates results of each action to the players. Note that in case a complication does occur, DM doesn't need to spell out its full scope, only the immediately visible side effects.
+1. Dice are rolled for each action in succession, and disaster master decides on the success or failure of the action. If action fails, disaster master can either withhold some information that players were looking for or introduce a complication to the game. Disaster master relates results of each action to the players. Note that in case a complication does occur, disaster master doesn't need to spell out its full scope, only the immediately visible side effects.
 
 This system has a few notable properties:
 
@@ -86,8 +86,8 @@ This system has a few notable properties:
 
 There are 2 types of actions:
 
-* Query actions - those have no side effects on the state of the system. Players aim to gain some insight into the system. If they fail DM, should withhold the information players seek.
-* Command actions - those have side effects on the state of the system. Players attempt to fix things with these actions. If they fail, DM should introduce a complication.
+* Query actions - those have no side effects on the state of the system. Players aim to gain some insight into the system. If they fail disaster master, should withhold the information players seek.
+* Command actions - those have side effects on the state of the system. Players attempt to fix things with these actions. If they fail, disaster master should introduce a complication.
 
 For each action players can choose a tool they will use to perform the action. Each player has proficiency in certain tools. If a player performing an action has proficiency in the tool the action is using, they receive a `+2` to their dice roll. Available tools should reflect the real world setup, thus raising awareness among players (`Improve`).
 
@@ -108,7 +108,7 @@ Each list can include proprietary technologies used in real world scenarios. Lis
 
 Depending on your players interest, tool proficiency can be predefined in their profiles or individually defined by players themselves. This option could improve engagement (`Scale`).
 
-DM should assign each action a difficulty. Players, while considering which actions to pick and how to allocate their shared dice, should check the difficulty. For assigning difficulty it should suffice to categorize actions into easy, medium and hard category which should, on average, be solvable with 1, 2 or 3 dice by a player with tool proficiency. More precisely:
+Disaster master should assign each action a difficulty. Players, while considering which actions to pick and how to allocate their shared dice, should check the difficulty. For assigning difficulty it should suffice to categorize actions into easy, medium and hard category which should, on average, be solvable with 1, 2 or 3 dice by a player with tool proficiency. More precisely:
 
 |Action|Difficlty|
 |------|---------|
@@ -116,6 +116,6 @@ DM should assign each action a difficulty. Players, while considering which acti
 |Medium|9        |
 |Hard  |12       |
 
-Dice roll combined with tool proficiency bonus (if exists) should be above the difficulty for action to succeed. DM can decide on the severity of complications for failure based on how bad the roll is.
+Dice roll combined with tool proficiency bonus (if exists) should be above the difficulty for action to succeed. Disaster master can decide on the severity of complications for failure based on how bad the roll is.
 
-This system is designed to be as easy as possible for players to understand and DMs to implement (`Scale`), while keeping the game interesting (`Scale`). On the other hand it raises awareness of the real world tools (`Improve`) and encourages cooperation among players (`Coop`).
+This system is designed to be as easy as possible for players to understand and disaster masters to implement (`Scale`), while keeping the game interesting (`Scale`). On the other hand it raises awareness of the real world tools (`Improve`) and encourages cooperation among players (`Coop`).
