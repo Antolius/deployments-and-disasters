@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main>
+    <div class="flex">
+        <secstion>
+            <article>
+                <header>
+                    <h1>{{ .Title }}</h1>
+                </header>
+                {{ .Content }}
+            </article>
+            <div class="flex three center">
+                {{ range .Pages }}
+                <article class="card page">
+                    <header>
+                        <h2>{{ .Title }}</h2>
+                    </header>
+                    <p>
+                        {{ .Summary }}
+                    </p>
+                    <footer>
+                        <a href="{{ .Permalink }}">See more</a>
+                    </footer>
+                </article>
+                {{ end }}
+            </div>
+        </secstion>
+    </div>
+</main>
+{{ end }}
