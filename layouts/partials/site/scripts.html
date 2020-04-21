@@ -1,0 +1,5 @@
+{{ $mermaid := resources.Get "js/mermaid.min.js" }}
+<script src="{{ $mermaid.Permalink }}"></script>
+
+{{ $app := resources.Get "js/app.js" | minify }}
+<script src="{{ $app.Permalink }}"></script>
