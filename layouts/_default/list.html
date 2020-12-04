@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main>
     <div class="flex">
-        <secstion>
+        <section>
             <article>
                 <header>
                     <h1>{{ .Title }}</h1>
@@ -9,7 +9,7 @@
                 {{ .Content }}
             </article>
             <div class="flex three center">
-                {{ range .Pages }}
+                {{ range sort .Pages ".Params.menu.side.weight" "asc"}}
                 <article class="card page">
                     <header>
                         <h2>{{ .Title }}</h2>
@@ -23,7 +23,7 @@
                 </article>
                 {{ end }}
             </div>
-        </secstion>
+        </section>
     </div>
 </main>
 {{ end }}
