@@ -16,3 +16,4 @@ For running a session of Deployments and disasters you will need:
 1. Between 3 and 10 [players]({{< ref "/play/roles#players" >}}).
 1. A set of 5 six-sided dice (D6).
 1. Prepared incident [scenario]({{< ref "/host/scenario" >}}) and player roles.
+1. A board or a screen shared with the players to draw the incident clock and various charts on.
