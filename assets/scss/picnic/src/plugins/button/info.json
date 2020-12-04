@@ -1,7 +1,0 @@
-{
-  "id": "button",
-  "name": "Button",
-  "included": true,
-  "affected": "button, .button, [type=submit]",
-  "summary": "An element that looks like it can be clicked and will perform some action."
-}

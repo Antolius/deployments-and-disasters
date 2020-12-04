@@ -1,7 +1,0 @@
-{
-  "id": "generic",
-  "name": "Generic",
-  "description": "General styles for common elements",
-  "install": "[included]",
-  "partial": true
-}

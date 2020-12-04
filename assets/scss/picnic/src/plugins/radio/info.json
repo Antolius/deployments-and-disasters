@@ -1,7 +1,0 @@
-{
-  "id": "radio",
-  "name": "Radiobutton",
-  "included": true,
-  "affected": "[type=radio]",
-  "summary": "Allows to choose one element from several of them."
-}

@@ -1,6 +1,0 @@
-baseURL = "https://beploymentsanddisasters.com/"
-languageCode = "en-us"
-title = "Deployments and disasters"
-
-[markup.goldmark.renderer]
-unsafe= true
