@@ -5,7 +5,7 @@ menu:
     side:
         weight: 20
 ---
-[Actions]({{< ref "/play/actions" >}}) are an aspect of the session where player creativity comes into a forefront. It's up to players to come up with actions, and up to the disaster master to specify their difficulty and narrate successful or failed outcomes. Nudging players into taking the right actions might be a more subtle way for a DM to influence a session.
+[Actions]({{< ref "/play/actions" >}}) are an aspect of the session where player creativity comes into the forefront. It's up to players to come up with actions, and up to the disaster master to specify their difficulty and narrate successful or failed outcomes. Nudging players into taking the right actions might be a more subtle way for a DM to influence a session.
 <!--more-->
 
 ## Setting difficulty
@@ -19,7 +19,7 @@ It should generally suffice to sort actions into three categories: easy, medium 
 |Medium   |10        |
 |Hard     |13        |
 
-Sometimes players will fail to perform an action in one turn and will retry it the next. In this case it's a good idea to lower the difficulty rating. It often makes sense in the narrative. For example, if player is going over a thread dump looking for clues, the more time they spend on it the more likely they'll find them. It also helps the session progress.
+Sometimes players will fail to perform an action in one turn and will retry it the next. In this case it's a good idea to lower the difficulty rating. It often makes sense in the narrative. For example, if a player is going over a thread dump looking for clues, the more time they spend on it the more likely they'll find them. It also helps the session progress.
 
 {{< rpg >}}
 Similarly to other tabletop RPGs, a DM should not allow players to make meaningless actions. Each action should, if it succeeds, help the players. For example it might help them eliminate some wrong presumptions, help them uncover the root cause of the incident or decrease its impact.
@@ -43,7 +43,7 @@ Disaster master can choose to introduce a complication at the beginning of a [tu
 
 ### Interrupts
 
-Interrupts work well as complications randomly introduced at the beginning of a turn. They might be CTO contacting the team and requesting an update, or a client submitting an complaint and asking for some assistance. In both cases DM lets players know that they can answer the interrupter with a low difficulty passive action.
+Interrupts work well as complications randomly introduced at the beginning of a turn. They might be CTO contacting the team and requesting an update, or a client submitting a complaint and asking for some assistance. In both cases DM lets players know that they can answer the interrupter with a low difficulty passive action.
 
 {{< notice >}}
 DM should be ready to introduce additional complications in case players choose to ignore an interrupt.
@@ -53,7 +53,7 @@ Use interrupts to slow the players down a bit.
 
 ### Degradations
 
-Degradations represent worsening situation. They might be caused by some player actions, for example a failed data base query might lock up a table, or a failed code deployment might make an app instance inaccessible. These make for a good complication to follow a failed action attempt.
+Degradations represent worsening situation. They might be caused by some player actions, for example a failed database query might lock up a table, or a failed code deployment might make an app instance inaccessible. These make for a good complication to follow a failed action attempt.
 
 Alternatively, degradations might be brought on by changing conditions such as client behavior or slowly draining resources. This type of degradation can be introduced as complication at the beginning of a turn. Use this type of complication to focus players' attention on a certain part of the system.
 

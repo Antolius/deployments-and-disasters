@@ -1,6 +1,6 @@
 baseURL = "https://antolius.github.io/deployments-and-disasters/"
 languageCode = "en-us"
-title = "Deployments and disasters"
+title = "Deployments and Disasters"
 
 [markup.goldmark.renderer]
 unsafe= true

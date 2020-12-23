@@ -14,7 +14,7 @@ Charts are rendered in JavaScript using the [mermaid](https://mermaid-js.github.
 
 ## Status
 
-The Deployments and disasters project is in active development.
+The Deployments and Disasters project is in active development.
 
 Next steps:
 
@@ -25,7 +25,7 @@ Next steps:
 
 ## License
 
-The content of the web page, including the Deployments and disasters rules and any accompanying materials is licensed under [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) licence. For details see `CONTENT-LICENCE.txt`.
+The content of the web page, including the Deployments and Disasters rules and any accompanying materials is licensed under [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) licence. For details see `CONTENT-LICENCE.txt`.
 
 Custom source code of this website is distributed under the MIT License. See `CODE-LICENSE.txt` for more information.
 

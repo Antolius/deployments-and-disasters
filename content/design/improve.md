@@ -8,7 +8,7 @@ menu:
 
 ## Motivation
 
-In order to facilitate the other two key goals of [scaling]({{< ref "/design/scale.md" >}}) and [cooperation]({{< ref "/design/cooperate.md" >}}) the Deployments and disasters rules gamify actual process of resolving the incident. This means that players don't experience using the tools and performing the management actions directly. Rather they explain their actions and intent, throw dice and disaster master determines the outcome.
+In order to facilitate the other two key goals of [scaling]({{< ref "/design/scale.md" >}}) and [cooperation]({{< ref "/design/cooperate.md" >}}) the Deployments and Disasters rules gamify the actual process of resolving the incident. This means that players don't experience using the tools and performing the management actions directly. Rather they explain their actions and intent, throw dice and disaster master determines the outcome.
 
 Despite not featuring concrete tools directly, this format is a good way to promote certain tools. Gamification elements help out with making a given tool attractive to players. Additionally, having a mix of diverse players in a session means they will likely have different real world skills. This can lead to sharing of knowledge between players themselves, with little involvement from the game.
 
