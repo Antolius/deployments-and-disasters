@@ -6,7 +6,7 @@ menu:
         weight: 40
 ---
 
-There are 2 types of actions in a game of Deployments and disasters:
+There are 2 types of actions in a game of Deployments and Disasters:
 
 1. **Passive actions** in which players collect information from the software system without changing it.
 1. **Active actions** in which players make changes to the system or interact with it in an active capacity.
@@ -53,4 +53,4 @@ Each action relies on some tool or technology. Tools may include:
 * Git
 * In-house tool for client management
 
-Technologies may include programing languages, but also languages like SQL, or configuration file formats such as YAML. Lastly, an action might involve interacting with particular individual or groups of stakeholders.
+Technologies may include programing languages, but also languages like SQL, or configuration file formats such as YAML. Lastly, an action might involve interacting with a particular individual or groups of stakeholders.

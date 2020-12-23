@@ -14,11 +14,11 @@ There are 3 key design goals that influence all decisions in Deployments and Dis
 1. Game should teach players to [cooperate]({{< ref "/design/cooperate" >}}).
 1. Game should inspire players to [improve]({{< ref "/design/improve" >}}).
 
-There are individual sections dedicated to each of the goals. There you can find more detail explanation of each goal and motivation behind it.
+There are individual sections dedicated to each of the goals. There you can find a more detailed explanation of each goal and motivation behind it.
 
 ## Impact of goals
 
-Some sections of rules, provided scenarios or other peaces of content on this site will call back to a design goal they reinforce. Event without an explicit callback try keeping these goals in mind and interpret every peace of content presented here through them. Some questions you can ask yourself are:
+Some sections of rules, provided scenarios or other pieces of content on this site will call back to a design goal they reinforce. Even without an explicit callback try keeping these goals in mind and interpret every piece of content presented here through them. Some questions you can ask yourself are:
 
 1. Which goal is a given rule reinforcing?
 1. How would inverting a given rule impact the goals?
@@ -26,6 +26,6 @@ Some sections of rules, provided scenarios or other peaces of content on this si
 
 ## Metrics
 
-In addition to considering impact on individual rules you should also track how well each goal is met in a given game. For this you'll need a set of metrics and means of measuring them. This is why each goal comes with few suggestions for measuring its effectiveness.
+In addition to considering impact on individual rules you should also track how well each goal is met in a given game. For this you'll need a set of metrics and means of measuring them. This is why each goal comes with a few suggestions for measuring its effectiveness.
 
-Note that while playing Deployments and disasters is potentially fun it is primarily intended to be a learning exercise. As such you should always be looking at value that exercise provided to players who attended a session and the company you work for.
+Note that while playing Deployments and Disasters is potentially fun it is primarily intended to be a learning exercise. As such you should always be looking at value that exercise provided to players who attended a session and the company you work for.
