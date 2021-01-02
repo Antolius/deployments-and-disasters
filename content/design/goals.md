@@ -1,6 +1,7 @@
 ---
 title: "Goals"
 date: 2020-02-09T21:03:09+01:00
+description: the overarching goals of the game
 menu:
     side:
         weight: 10

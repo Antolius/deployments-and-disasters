@@ -1,6 +1,7 @@
 ---
 title: "How to play"
 date: 2020-02-09T20:18:36+01:00
+description: some rules and situations to get you started
 menu:
     main:
         weight: 10

@@ -1,5 +1,6 @@
 ---
 title: "Deployments and Disasters"
+description: A tabletop RPG for practicing incident management
 date: 2020-02-09T20:17:01+01:00
 ---
 

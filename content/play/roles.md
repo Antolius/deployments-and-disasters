@@ -1,6 +1,7 @@
 ---
 title: "Roles"
 date: 2020-02-09T23:50:18+01:00
+description: what the disaster master and players should do
 menu:
     side:
         weight: 10

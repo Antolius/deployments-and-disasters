@@ -1,6 +1,7 @@
 ---
 title: "Cooperate"
 date: 2020-02-09T21:29:36+01:00
+description: a way for roles to cooperate in finding a solution
 menu:
     side:
         weight: 30

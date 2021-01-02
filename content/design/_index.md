@@ -1,6 +1,7 @@
 ---
 title: "Game design"
 date: 2020-02-09T20:18:57+01:00
+description: in-depth reasoning for the choices made in the rules
 menu:
     main:
         weight: 60

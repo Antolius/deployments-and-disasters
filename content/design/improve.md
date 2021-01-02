@@ -1,6 +1,7 @@
 ---
 title: "Improve"
 date: 2020-02-09T21:29:45+01:00
+description: how to measure the improvement as a result of the game
 menu:
     side:
         weight: 40

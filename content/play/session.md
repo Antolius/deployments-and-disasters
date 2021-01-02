@@ -1,6 +1,7 @@
 ---
 title: "Session"
 date: 2020-02-16T23:28:57+01:00
+description: everything about how to run a fun and engaging session
 menu:
     side:
         weight: 20

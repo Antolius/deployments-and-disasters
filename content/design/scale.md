@@ -1,6 +1,7 @@
 ---
 title: "Scale"
 date: 2020-02-09T21:23:17+01:00
+description: maximize organizational learnings and scale the impact
 menu:
     side:
         weight: 20

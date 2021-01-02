@@ -1,6 +1,7 @@
 ---
 title: "Scenario"
 date: 2020-03-07T21:36:12+01:00
+description: how to create a realistic and engaging scenario for players
 menu:
     side:
         weight: 10

@@ -1,6 +1,7 @@
 ---
 title: "Actions"
 date: 2020-02-22T23:09:23+01:00
+description: the two different types of actions in the game
 menu:
     side:
         weight: 40
