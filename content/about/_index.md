@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2020-02-09T20:19:12+01:00
+description: this is the about page
 menu:
     main:
         weight: 100

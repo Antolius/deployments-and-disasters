@@ -1,6 +1,7 @@
 ---
 title: "Action rules"
 date: 2020-03-08T21:10:38+01:00
+description: the rules governing the actions and turns
 menu:
     side:
         weight: 20

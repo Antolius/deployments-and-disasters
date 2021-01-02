@@ -1,6 +1,7 @@
 ---
 title: "Turn"
 date: 2020-02-16T23:29:03+01:00
+description: an in-depth look at what happens in each turn
 menu:
     side:
         weight: 30

@@ -1,6 +1,7 @@
 ---
 title: "How to host"
 date: 2020-02-09T20:18:46+01:00
+description: an overview on how to host a game yourself
 menu:
     main:
         weight: 20
