@@ -1,25 +1,12 @@
 ---
 title: "Incident scenarios"
 date: 2020-02-09T20:19:03+01:00
-description: an example scenario involving an API/Queue/DB interaction
-draft: true
+description: example scenarios ready to play
 menu:
     main:
         weight: 30
 ---
-Coming soon...
+
+After reading through instructions for Disaster Masters in the [how to host section]({{< ref "/host" >}}) you can take a look at the scenarios presented here. They should be detailed enough for you to run them without much prep, and generic enough for any group of players.
 <!--more-->
-{{< mermaid >}}
-graph TD
-    subgraph API layer
-        API[API gateway] --> Queue([Actions queue])
-        Queue --> Taker[Actions taker]
-    end
-    subgraph Backend layer
-        API --> Auth[Auth. service]
-        Liker[Likes service] --> Auth
-        Liker --> DB[(Likes store)]
-        Taker --> Liker
-        Taker --> Other{{Other services}}
-    end
-{{</ mermaid >}}
+
