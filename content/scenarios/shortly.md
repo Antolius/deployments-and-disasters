@@ -12,7 +12,7 @@ Short.ly is a fictional URL shortening SaaS company that is about to experience 
 
 ## About Short.ly
 
-Short.ly is a relatively young company, but it has an established cross-functional development team, as well as dedicated sales and customer support teams. Its business model aims for steady growth and early profitability without major investments. It adopted the micro-service architecture and agile methodology.
+Short.ly is a relatively young company, but it has an established cross-functional development team, as well as customer success management team. Its business model aims for steady growth and early profitability without major investments. It adopted the micro-service architecture and agile methodology.
 
 ### Business model
 
@@ -46,6 +46,10 @@ flowchart TB
 The services are highly available and independently scalable. There are at least 2 instances of each. Incoming API requests go through the `📣️ Load Balancer` which round robins across available service instances. There are three instances of the performance critical `🔄️ Redirect Service`, helping it handle the peak loads.
 
 The `🔗️ Cache` cannot hold all the active URLs, however the 20-80 rule was found to effective enough. Approximately 20% of the daily active URLs are cached at any given time. The cache is limited by the available RAM and uses last recently used eviction policy. It ignores duplicates, so `⚙️ Event Handler` can just offer it URL from any redirect event it processes.
+
+{{< notice >}}
+The components of the Short.ly's system are intentionally kept generic. As a Disaster Master you should adapt them to your players. If you are hosting a session for your coworkers pick the language you use on your day job for the services. Likewise, if you work with concrete queue, cache or database implementation pick those. RabbitMQ, Kafka, Redis, Memcached, SQL or NoSQL, those are all OK options. It's also OK to keep the scenario generic, especially in case you have a mixed player group, or you can't gauge their skill level.
+{{</ notice >}}
 
 ## The incident
 
@@ -93,7 +97,7 @@ There are options between these two: like dropping some of the redirect events f
 
 This scenario can be played by four to seven players. The roles include:
 
-* **Sales team member** They know about the **customer 32's** per-user URLs. They are proficient in communication with customers, and can detect the viral post from **customer 17** on social media.
+* **Customer success manager** They know about the **customer 32's** per-user URLs. They are proficient in communication with customers, and can detect the viral post from **customer 17** on social media.
 * **Product manager** They know about the turning click rate tracking on for all customers. They also know priorities for each of the main 3 flows. They are proficient in analytic tools and communicating with other stakeholders within the company.
 * **Site reliability engineer** They know standard metrics, like usual API request rate, usual cache hit rate, etc. They are proficient in reading metrics and logs.
 * **Developer** This role can be split into several depending on the number of players. For example, each developer in the team can be responsible for maintaining one of the tree flows. Alternatively, one developer can be in charge of the services, another is a DevOps and maintains the queue and the cache, while a third is a database admin. In either case each of them knows their part of the system, and is proficient in specific technologies used in it.

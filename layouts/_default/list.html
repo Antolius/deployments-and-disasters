@@ -11,13 +11,13 @@
             <div class="flex one two-600 three-1200 center">
                 {{ range sort .Pages ".Params.menu.side.weight" "asc"}}
                 <article class="card page">
-                    <header>
+                    <header class="stack">
                         <h2>{{ .Title }}</h2>
                     </header>
-                    <p>
+                    <p class="stack">
                         {{ .Summary }}
                     </p>
-                    <footer>
+                    <footer class="stack">
                         <a href="{{ .Permalink }}">See more</a>
                     </footer>
                 </article>

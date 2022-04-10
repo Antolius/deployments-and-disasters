@@ -1,7 +1,18 @@
-
 @import './picnic_overrides.scss';
 @import './picnic/src/themes/squared/theme';
 @import './picnic/src/picnic.scss';
+
+a:not(.brand) {
+    color: $blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active:not(.brand) {
+    color: $base01;
+}
 
 nav.main {
     background: $base03;
@@ -37,11 +48,33 @@ nav#TableOfContents {
 }
 
 .card {
-    border-radius: 0.2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.3em 0.7em -0.5em;
+    margin: 0 auto 1em;
+    display:flex;
+    flex-direction:column;
+}
+
+.card header {
+    border-bottom-style: solid;
+    border-width: 0.1em;
+    border-color: $base2;
+}
+
+.card footer {
+    border-top-style: solid;
+    border-width: 0.1em;
+    border-color: $base2;
+    margin-top:auto;
 }
 
 .card.page {
     margin: 1em;
+}
+
+.card.rpg header {
+    color: $cyan;
+    background: $base2;
 }
 
 .card.notice header {
@@ -49,7 +82,15 @@ nav#TableOfContents {
     background: $base3;
 }
 
-.card.rpg header {
-    color: $cyan;
-    background: $base2;
+.card.warning header {
+    color: $red;
+    background: $base3;
+}
+
+.mermaid {
+    text-align: center;
+}
+
+.mermaid svg {
+    margin: auto;
 }

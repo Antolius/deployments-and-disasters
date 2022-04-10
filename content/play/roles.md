@@ -62,7 +62,7 @@ Additionally, players should feel free to share any real world knowledge about i
 If you are used to other tabletop RPGs you might recognize this as meta-gaming. This practice is typically discouraged. However, in a session of Deployments and Disasters players are actually encouraged to meta-game. Remember that this is an educational activity with the goal of spreading knowledge about real world incident management tools and procedures.
 {{</ rpg >}}
 
-### Tool proficiencies
+### Tool proficiency
 
 In addition to extra information each player role gets a set of proficiencies. Think of them as technologies and tools that particular role is extra skilled with.
 

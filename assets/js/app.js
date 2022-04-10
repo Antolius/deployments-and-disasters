@@ -6,9 +6,5 @@ mermaid.initialize({
         lineColor: '#586e75',
         textColor: '#073642',
         fontSize: '24px'
-    },
-    flowchart: {
-        useMaxWidth: true,
-        htmlLabels: true
     }
 });
