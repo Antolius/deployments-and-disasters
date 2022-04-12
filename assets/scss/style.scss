@@ -92,5 +92,9 @@ nav#TableOfContents {
 }
 
 .mermaid svg {
-    margin: auto;
+    margin: 20px auto 20px auto;
+    height: auto;
+    position: relative;
+    width: 60vw;
+    left: calc(-30vw + 50%);
 }
