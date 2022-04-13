@@ -5,7 +5,7 @@ date: 2022-04-12T23:54:12+02:00
 draft: true
 ---
 
-Short.ly is a relatively young company, but it has an established cross-functional development team, as well as customer success management team. Its business model aims for steady growth and early profitability without major investments. It employs the micro-service architecture and agile methodology.
+Short.ly is a relatively young company, but it has an established cross-functional development and customer success management team. Its business model aims for steady growth and early profitability without major investments. It employs a micro-service architecture and agile methodology.
 <!--more-->
 
 ## Business model
@@ -18,8 +18,8 @@ Short.ly distinguishes between 2 types of users:
 
 Short.ly uses a micro service architecture. This means there are separate services supporting each of the tree main features:
 * Shortening URLs is performed by `🗜️ Shortener service`. Info on the shortened URLs is stored in `🔗️ URLs Database`.
-* URL redirecting is handled by `🔄️ Redirect Service`. It first looks for the URL in `🔗️ Cache`, and falls back to `🔗️ URLs Database` in case a short URL is not currently cached. Lastly it sends the info about the redirect event, including short and long URLs and the user agent info, to `📬️ Events Queue`.
-* Processing of redirect events is handled by `⚙️ Event Handler` service, which reads from `📬️ Events Queue`. It calculates click rates and stores them in `📊️ Stats Database`. It also stores URL info into `🔗️ Cache`.
+* URL redirecting is handled by `🔄️ Redirect Service`. It first looks for the URL in `🔗️ Cache`, and falls back to `🔗️ URLs Database` in case a short URL is not currently cached. Lastly it sends the info about the redirect event, including short and long URLs and the user agent, to `📬️ Events Queue`.
+* Converting redirect events into click rate statistics is handled by `⚙️ Event Handler` service, which reads from `📬️ Events Queue`. It calculates click rates and stores them in `📊️ Stats Database`. It also populates `🔗️ Cache` with short codes and long URLs.
 
 {{<mermaid>}}
 flowchart TB

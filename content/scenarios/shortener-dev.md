@@ -5,7 +5,7 @@ date: 2022-04-11T23:58:12+02:00
 draft: true
 ---
 
-You are a developer working on `🗜️ Shortener service` and maintaining `🔗️ URLs Database`. You implemented the algorithm for generating short URLs from the client provided long URLs. You are responsible for keeping the shortening API up and running.
+You are a developer working on `🗜️ Shortener service` and maintaining `🔗️ URLs Database`. You implemented the algorithm for generating short URLs from the client provided long URLs. **Your main responsibility is to generate a unique short code for every long URL that clients submit.**
 <!--more-->
 
 ## What you know
@@ -36,6 +36,17 @@ Content-Type: application/json
 }
 ```
 
+The `urls` table in the `🔗️ URLs Database` looks like this:
+
+|       | Column name   | Type        |
+|-------|---------------|-------------|
+| 🔑️ PK | short_code    | varchar(16) |
+|       | full_url      | nvarchar    |
+|       | creator_id    | int         |
+|       | created_at    | datetime    |
+
+While `🔗️ URLs Database` is projected to grow large over time, the simple use-cases (inserts and querying by the primary key) are easy to support.
+
 All client requests first go through `📣️ Load Balancer`, which sends them on to instances of `🗜️ Shortener service`, of which there are two. This enables you to deploy new versions of the service without downtime.
 
 `🗜️ Shortener service` handles API requests like this:
@@ -54,22 +65,11 @@ flowchart TB
     I --YES--> J([Return 201 Created HTTP status with short URL in response body])
 {{</mermaid>}}
 
-The `urls` table in the `🔗️ URLs Database` looks like this:
-
-|       | Column name   | Type        |
-|-------|---------------|-------------|
-| 🔑️ PK | short_code    | varchar(16) |
-|       | full_url      | nvarchar    |
-|       | creator_id    | int         |
-|       | created_at    | datetime    |
-
-While `🔗️ URLs Database` is projected to grow large over time, the simple use-cases (inserts and querying by the primary key) are easy to support.
-
 ## What you are good at
 
 In the game you can perform any actions you want, but these are the ones you are good at. When performing these action you add `+2` to your dice rolls.
 
-* Checking application metrics and logs from `🗜️ Shortener service`. These include logs from the service itself, as well as metrics from the VM where the app is ruining.
-* Service OPS, including restarts, deployments and configuration updates, such as tweaking logging levels, memory usage limits, etc.
-* Making changes to `🗜️ Shortener service's` source code.
+* **Checking application metrics and logs** from `🗜️ Shortener service`. These include logs from the service itself, as well as metrics from the VM where the app is ruining.
+* **Making changes to `🗜️ Shortener service's` source code.**
+* Service OPS, including **restarts, deployments and configuration updates**, such as tweaking logging levels, memory usage limits, etc.
 * Checking metrics, diagnosing issues and analyzing query execution plans from `🔗️ URLs Database`.

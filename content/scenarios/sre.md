@@ -5,7 +5,7 @@ date: 2022-04-11T20:53:32+02:00
 draft: true
 ---
 
-You are a site reliability engineer (SRE) at Short.ly. You work with the dev team to define key metrics to track and performance thresholds that services need to meet. You are in charge of setting up alerting on top of those metrics. It's your job to make sure that all the components of Short.ly's architecture are scaled correctly.
+You are a site reliability engineer (SRE) at Short.ly. You work with the dev team to define key metrics to track and performance thresholds that services need to meet. You are in charge of setting up alerting on top of those metrics. **Your main responsibility is to make sure if SLOs are ever breached that they are reestablished as quickly as possible.**
 <!--more-->
 
 ## What you know
@@ -55,6 +55,6 @@ Before going into production the system was tested with these loads, and it func
 
 In the game you can perform any actions you want, but these are the ones you are good at. When performing these action you add `+2` to your dice rolls.
 
-* Querying metrics and logs from `📣️ Load Balancer`. This includes latency and request rates segmented by HTTP response status or requested short URL.
-* Checking capacity related metrics, such as free / used up disc space on database servers, memory usage of `🔗️ Cache` and `📬️ Events Queue`, number of redirect events in the queue.
-* Setting up new application VMs to scale existing services.
+* **Querying metrics and logs** from `📣️ Load Balancer`. This includes latency and request rates segmented by HTTP response status or requested short URL.
+* Checking capacity related metrics, such as **free / used up disc space** on database servers, **memory usage** of `🔗️ Cache` and `📬️ Events Queue`, **number of redirect events in the queue**.
+* **Setting up new application VMs** to scale existing services.

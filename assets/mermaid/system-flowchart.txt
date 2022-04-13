@@ -1,0 +1,11 @@
+flowchart TB
+    users(("👥️ users")) <--> lb["📣️ Load Balancer"]
+    lb <--> shs[["🗜️ Shortener service 1, 2"]]
+    shs --> db[("🔗️ URLs Database")]
+    lb <--> rs[["🔄️ Redirect Service 1, 2, 3"]]
+    rs <--> cache[("🔗️ Cache")]
+    rs <-.-> db
+    rs --> queue(["📬️ Events Queue"])
+    queue --> eh[["⚙️ Event Handler 1, 2"]]
+    eh --> cache
+    eh --> stats[("📊️ Stats Database")]

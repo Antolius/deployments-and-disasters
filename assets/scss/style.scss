@@ -87,14 +87,11 @@ nav#TableOfContents {
     background: $base3;
 }
 
-.mermaid {
-    text-align: center;
+table {
+    margin: auto;
 }
 
-.mermaid svg {
-    margin: 20px auto 20px auto;
-    height: auto;
-    position: relative;
-    width: 60vw;
-    left: calc(-30vw + 50%);
+.mermaid {
+    text-align: center;
+    margin: auto;
 }

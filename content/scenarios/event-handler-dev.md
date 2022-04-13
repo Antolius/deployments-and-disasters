@@ -5,7 +5,7 @@ date: 2022-04-12T23:08:11+02:00
 draft: true
 ---
 
-You are a developer working on `⚙️ Event Handler` service and maintaining `📬️ Events Queue` and `📊️ Stats Database`. These are important, as click rate statistics are what clients are paying from. On the other hand, calculating these rates is the one flow which clients don't interact directly with, allowing for some lenience.
+You are a developer working on `⚙️ Event Handler` service and maintaining `📬️ Events Queue` and `📊️ Stats Database`. These are important, as click rate statistics are what clients are paying from. **Your main responsibility is to make sure all paying clients get accurate click rate statistics at the end of the month.**
 <!--more-->
 
 ## What you know
@@ -46,8 +46,8 @@ Until recently redirect rates were only calculated for paying clients. However, 
 
 In the game you can perform any actions you want, but these are the ones you are good at. When performing these action you add `+2` to your dice rolls.
 
-* Checking application metrics and logs from `⚙️ Event Handler`. These include logs from the service itself, as well as metrics from the VM where the app is ruining.
-* Service OPS, including restarts, deployments and configuration updates, such as tweaking logging levels, memory usage limits, etc.
-* Making changes to `⚙️ Event Handler's` source code.
+* **Checking application metrics and logs** from `⚙️ Event Handler`. These include logs from the service itself, as well as metrics from the VM where the app is ruining.
+* **Making changes to `⚙️ Event Handler's` source code**.
+* Service OPS, including **restarts, deployments and configuration updates**, such as tweaking logging levels, memory usage limits, etc.
 * Checking metrics from and diagnosing issues with `📬️ Events Queue`.
-* Making manual updates to `📬️ Events Queue`, including peeking or outright dropping messages from the queue.
+* Making manual updates to `📬️ Events Queue`, including **peeking or dropping messages from the queue**.
